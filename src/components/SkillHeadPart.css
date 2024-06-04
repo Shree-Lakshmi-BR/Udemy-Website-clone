@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Udemy Sans", "SF Pro Text", -apple-system, BlinkMacSystemFont,
+    Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.skill_container {
+  /* border: 1px solid red; */
+  height: 150px;
+  margin: 20px;
+}
+.para {
+  margin-left: 80px;
+  text-align: left;
+  line-height: 40px;
+}
+.para h1 {
+  font-size: 36px;
+  color: #2d2f31;
+}
+.para h4 {
+  font-size: 17px;
+  color: rgb(123, 120, 120);
+  font-weight: 400;
+}
+.buttons {
+  text-align: left;
+  margin-left: 70px;
+}
+.buttons button {
+  margin-left: 80px;
+  margin-top: 10px;
+  /* border: none; */
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom-color: #fff;
+  background-color: #fff;
+  height: 50px;
+  width: 150px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.buttons .skill_btn1 {
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-bottom-color: #2d2f31;
+}
+.buttons .skill_btn2 {
+  width: 314px;
+  margin-left: 0;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .para {
+    margin-left: 60px;
+  }
+  .buttons {
+    margin-left: 60px;
+  }
+  .buttons button {
+    margin-left: 10px;
+    width: 140px;
+  }
+  .buttons .skill_btn2 {
+    width: 290px;
+  }
+}
+
+@media (max-width: 992px) {
+  .para {
+    margin-left: 40px;
+  }
+  .buttons {
+    margin-left: 40px;
+  }
+  .buttons button {
+    margin-left: 10px;
+    width: 130px;
+  }
+  .buttons .skill_btn2 {
+    width: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .para {
+    margin-left: 20px;
+    line-height: 30px;
+  }
+  .para h1 {
+    font-size: 30px;
+  }
+  .para h4 {
+    font-size: 15px;
+  }
+  .buttons {
+    margin-left: 20px;
+  }
+  .buttons button {
+    margin-left: 10px;
+    width: 120px;
+  }
+  .buttons .skill_btn2 {
+    width: 230px;
+  }
+}
+
+@media (max-width: 576px) {
+  .para {
+    margin-left: 10px;
+    line-height: 25px;
+  }
+  .para h1 {
+    font-size: 24px;
+  }
+  .para h4 {
+    font-size: 14px;
+  }
+  .buttons {
+    margin-left: 10px;
+  }
+  .buttons button {
+    margin-left: 5px;
+    width: 100px;
+  }
+  .buttons .skill_btn2 {
+    width: 200px;
+  }
+}

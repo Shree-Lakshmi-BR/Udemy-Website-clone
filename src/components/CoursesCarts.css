@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Udemy Sans", "SF Pro Text", -apple-system, BlinkMacSystemFont,
+    Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.cart-container {
+  height: 60vh;
+  width: auto;
+  background-color: #f7f9fa;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cart-container .cart-container1,
+.cart-container .cart2,
+.cart-container .cart3,
+.cart-container .cart4 {
+  height: 49vh;
+  width: 80%;
+  max-width: 20vw;
+  border: 1px solid lightgray;
+  background-color: white;
+  margin: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+.cart-container .cart-container1 .cart1-img1,
+.cart-container .cart2 .cart2-img2,
+.cart-container .cart3 .cart1-img3,
+.cart-container .cart4 .cart1-img4 {
+  height: 22vh;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cart-container .cart-container1 .cart1-img1 {
+  background-image: url("https://img-c.udemycdn.com/course/240x135/1565838_e54e_18.jpg");
+}
+.cart-container .cart2 .cart2-img2 {
+  background-image: url("https://img-c.udemycdn.com/course/240x135/625204_436a_3.jpg");
+}
+.cart-container .cart3 .cart1-img3 {
+  background-image: url("https://img-c.udemycdn.com/course/240x135/965528_737d_7.jpg");
+}
+.cart-container .cart4 .cart1-img4 {
+  background-image: url("https://img-c.udemycdn.com/course/240x135/1415652_ad99_4.jpg");
+}
+.con {
+  text-align: left;
+  margin: 10px 20px;
+  line-height: 25px;
+}
+.stars {
+  color: #b4690e;
+}
+.btn-sell {
+  margin: 10px;
+  background-color: #eceb98;
+  font-weight: 200;
+  border: none;
+}
+.courses {
+  height: 90px;
+  width: auto;
+  padding-left: 80px;
+  background-color: #f7f9fa;
+  text-align: left;
+}
+.courses .show {
+  height: 50px;
+  width: 300px;
+  background-color: #f7f9fa;
+}
+.courses .show:hover {
+  background-color: rgb(222, 222, 222);
+}
+/* dropdowns */
+.ssdropdown1 span,
+.ssdropdown2 span,
+.ssdropdown3 span,
+.ssdropdown4 span {
+  color: rgb(75, 163, 75);
+}
+.ssdropdown1 button,
+.ssdropdown2 button,
+.ssdropdown3 button,
+.ssdropdown4 button {
+  background-color: rgb(148, 53, 148);
+  padding: 5px 10px;
+  display: block;
+  height: 40px;
+  width: 210px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+.ssdropdown1 button:hover,
+.ssdropdown2 button:hover,
+.ssdropdown3 button:hover,
+.ssdropdown4 button:hover {
+  opacity: 0.8;
+}
+.buttonandheart {
+  display: flex;
+}
+.buttonandheart img {
+  width: 20px;
+  border: solid 0.5px black;
+  border-radius: 50px;
+  padding: 10px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.ssdropdown1 .textandtick img,
+.ssdropdown2 .textandtick img,
+.ssdropdown3 .textandtick img,
+.ssdropdown4 .textandtick img {
+  width: 15px;
+  object-fit: contain;
+  border: none;
+}
+.ssdropdown1,
+.ssdropdown2,
+.ssdropdown3,
+.ssdropdown4 {
+  display: none;
+  width: 300px;
+  margin-top: 900px;
+  padding: 20px;
+  top: -70px;
+  position: absolute;
+  background-color: white;
+  border: solid 0.5px rgb(209, 202, 202);
+  z-index: 100;
+}
+.ssdropdown1 {
+  left: 240px;
+}
+.ssdropdown2 {
+  left: 575px;
+}
+.ssdropdown3 {
+  left: 940px;
+}
+.ssdropdown4 {
+  left: -360px;
+}
+.cart-container1:hover .ssdropdown1 {
+  display: block;
+}
+.cart2:hover .ssdropdown2 {
+  display: block;
+}
+.cart3:hover .ssdropdown3 {
+  display: block;
+}
+.cart4:hover .ssdropdown4 {
+  display: block;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .cart-container .cart-container1,
+  .cart-container .cart2,
+  .cart-container .cart3,
+  .cart-container .cart4 {
+    max-width: 40vw;
+  }
+}
+@media (max-width: 768px) {
+  .cart-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart-container .cart-container1,
+  .cart-container .cart2,
+  .cart-container .cart3,
+  .cart-container .cart4 {
+    width: 90%;
+    margin: 10px 0;
+  }
+  .ssdropdown1,
+  .ssdropdown2,
+  .ssdropdown3,
+  .ssdropdown4 {
+    width: 90%;
+    left: 5%;
+  }
+}
+@media (max-width: 480px) {
+  .cart-container .cart-container1,
+  .cart-container .cart2,
+  .cart-container .cart3,
+  .cart-container .cart4 {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .ssdropdown1,
+  .ssdropdown2,
+  .ssdropdown3,
+  .ssdropdown4 {
+    width: 100%;
+    left: 0;
+  }
+}

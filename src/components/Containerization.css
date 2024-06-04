@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Udemy Sans", "SF Pro Text", -apple-system, BlinkMacSystemFont,
+    Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.containerize {
+  background-color: #f7f9fa;
+  height: 820px;
+  display: flex;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.cart1 {
+  height: 750px;
+  width: 45%;
+  /* border: 1px solid red; */
+  margin: 40px 75px;
+}
+.cart1 h1 {
+  font-size: 32px;
+  text-align: left;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  color: #2d2f31;
+}
+.training {
+  border: 1px solid #a435f0;
+  border-left: 8px solid #a435f0;
+  border-radius: 5px;
+  height: 150px;
+  width: 80%;
+  padding-left: 15px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #2d2f31;
+}
+.training h3,
+.training p {
+  text-align: left;
+  margin-left: 20px;
+  line-height: 22px;
+  color: #6a6f73;
+  font-weight: 500;
+}
+.training h3 {
+  margin-bottom: 5px;
+  color: #2d2f31;
+  font-weight: 700;
+}
+/*  */
+.certifi {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 150px;
+  width: 80%;
+  margin: 15px 0px;
+  margin-left: 10px;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #2d2f31;
+}
+.certifi h3,
+.certifi p {
+  text-align: left;
+  margin-left: 20px;
+  line-height: 22px;
+  color: #6a6f73;
+  font-weight: 500;
+}
+.certifi h3 {
+  margin-bottom: 5px;
+  color: #2d2f31;
+  font-weight: 700;
+}
+/*  */
+.insight {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 150px;
+  width: 80%;
+  margin: 15px 0px;
+  margin-left: 10px;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #2d2f31;
+}
+.insight h3,
+.insight p {
+  text-align: left;
+  margin-left: 20px;
+  line-height: 22px;
+  color: #6a6f73;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.insight h3 {
+  margin-bottom: 5px;
+  color: #2d2f31;
+  font-weight: 700;
+  margin-left: -15px;
+  display: inline;
+}
+.insight button {
+  margin-left: 20px;
+  margin-top: -20px;
+  border: 1px solid #5624d0;
+  color: #5624d0;
+  height: 30px;
+  border-radius: 5px;
+  width: 30%;
+  font-weight: 600;
+  background-color: #f7f9fa;
+}
+.insight a {
+  margin-left: -210px;
+  text-decoration: none;
+  color: #5624d0;
+  font-weight: 700;
+  background-color: #fff;
+}
+/*  */
+.customize {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  height: 150px;
+  width: 80%;
+  margin: 15px 0px;
+  margin-left: 10px;
+  padding-left: 18px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #2d2f31;
+}
+.customize h3,
+.customize p {
+  text-align: left;
+  margin-left: 20px;
+  line-height: 22px;
+  color: #6a6f73;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.customize h3 {
+  margin-bottom: 5px;
+  color: #2d2f31;
+  font-weight: 700;
+  margin-left: -15px;
+  display: inline;
+}
+.customize button {
+  margin-left: 20px;
+  margin-top: -20px;
+  border: 1px solid #5624d0;
+  color: #5624d0;
+  height: 30px;
+  border-radius: 5px;
+  width: 30%;
+  font-weight: 600;
+  background-color: #f7f9fa;
+}
+.customize a {
+  margin-left: -210px;
+  text-decoration: none;
+  color: #5624d0;
+  font-weight: 700;
+  background-color: #fff;
+}
+/* 2nd part */
+.cart2 {
+  height: 750px;
+  width: 45%;
+  /* border: 1px solid red; */
+  margin: 40px 75px;
+}
+.cart2 img {
+  height: 650px;
+  width: 100%;
+  margin-top: 50px;
+  margin-left: -70px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .containerize {
+    flex-direction: column;
+    height: auto;
+  }
+  .cart1, .cart2 {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .cart2 img {
+    margin-left: 0;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart1, .cart2 {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .training, .certifi, .insight, .customize {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .insight button, .customize button {
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+  .insight a, .customize a {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart1 h1 {
+    font-size: 24px;
+    margin-left: 0;
+  }
+  .training h3, .certifi h3, .insight h3, .customize h3 {
+    margin-left: 0;
+  }
+  .training p, .certifi p, .insight p, .customize p {
+    margin-left: 0;
+    font-size: 14px;
+  }
+  .insight button, .customize button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
